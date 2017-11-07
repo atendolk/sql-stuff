@@ -65,10 +65,12 @@ function list() {
           console.log("Insufficient quantity!");
           list();
         } else {
+          var theId = answers.item;
           var value = (res[answers.item - 1].stock_quantity) - answers.quantity;
           var quantity = res[answers.item - 1].stock_quantity;
           console.log("Total cost: " + "$" + (res[answers.item - 1].price * answers.quantity));
-          updateProduct(quantity,value);
+
+          updateProduct(theId,value);
 
         }
 
@@ -79,12 +81,21 @@ function list() {
   });
 }
 
-function updateProduct(quantity, value) {
-  var query = con.query(
-    "UPDATE products SET WHERE ?", {
-      quantity: value
-    },
+
+
+
+
+// = stock_quantity - answers.quantity
+function updateProduct(theId, value) {
+  con.query(
+    "UPDATE products SET stock_quantity = ? WHERE id = ?", [
+      value, theId
+    ],
+
     function(err, res) {
+
+
+      if(err) throw err;
       console.log("You're order is placed!");
     }
   );
