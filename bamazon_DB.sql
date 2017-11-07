@@ -13,15 +13,15 @@ CREATE TABLE products (
   PRIMARY KEY (id)
 );
 
-INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) values('#3245','Nike-Hyperdunks','atheltic shoe wear','$100','50');
-INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) values('#2531','Nike-Basketball Shorts','atheltic undergarment','$50','100');
-INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) values('#1532','Nike-Basketball','Sports Equipment','$20','500');
-INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) values('#9034','Nike-Hyperquickness','atheltic shoe wear','$130','40');
-INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) values('#2345','Nike-Muscle Shirt','atheltic wear','$30','900');
-INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) values('#8756','Nike-Ankle socks','atheltic wear','$10','999');
-INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) values('#4562','Nike-Lebrons','atheltic shoe wear','$180','50');
-INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) values('#9046','Nike-Air','atheltic shoe wear','$65','200');
-INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) values('#8895','Nike-Mouth Guard','athletic wear','$10','989');
-INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) values('#5785','Nike-sweat band','atheltic wear','$10','898');
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) values('#3245','Nike-Hyperdunks','atheltic shoe wear','100','50');
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) values('#2531','Nike-Basketball Shorts','atheltic undergarment','50','100');
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) values('#1532','Nike-Basketball','Sports Equipment','20','500');
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) values('#9034','Nike-Hyperquickness','atheltic shoe wear','130','40');
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) values('#2345','Nike-Muscle Shirt','atheltic wear','30','900');
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) values('#8756','Nike-Ankle socks','atheltic wear','10','999');
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) values('#4562','Nike-Lebrons','atheltic shoe wear','180','50');
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) values('#9046','Nike-Air','atheltic shoe wear','65','200');
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) values('#8895','Nike-Mouth Guard','athletic wear','10','989');
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) values('#5785','Nike-sweat band','atheltic wear','10','898');
 
 SELECT * FROM products;
